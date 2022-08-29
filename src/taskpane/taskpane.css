@@ -1,0 +1,491 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cardInput {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../../assets/icons8-search-24.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=submit] {
+    background-color: lightseagreen;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 16px 26px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* input[type=text]:focus {
+    width: 100%;
+} */
+
+.column {
+    width: 25%;
+    padding-top: 5px;
+}
+
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+/* .row {
+    margin: 0 -5px;
+    text-align: center;
+    display: flex;
+    ;
+} */
+
+.img {
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%; */
+}
+/* 
+.img:hover {
+    border-radius: 10%;
+} */
+
+
+
+.card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 16px;
+    /* text-align: center; */
+    /* background-color: #f1f1f1;
+    border: 1px solid lightseagreen; */
+    margin-right: 2px;
+    width: 100px;
+    text-align: center;
+    padding-top: 3px;
+    margin-bottom: 5px
+
+}
+
+.demo {
+    padding: 10px;
+}
+
+.h2,
+h2,
+h3,
+.h3 {
+    margin: 0px;
+    /* float: left; */
+    width: 60%;
+    padding-left: 71px;
+    padding-top: 10px;
+}
+
+.SearchInputTag {
+    width: 130px;
+    /* margin-left: 23%; */
+    /* float: left; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    justify-items: center;
+    justify-content: center;
+}
+
+.input-container-radio {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.searchbar-container {
+    padding: 10px 0px;
+}
+
+.input-container {
+    display: flex;
+}
+
+.search-input {
+    height: 30px;
+    width: -webkit-fill-available
+}
+
+.label,
+label {
+
+    margin-left: 10px;
+    font-size: 22px;
+    font-family: cursive
+}
+
+.table-img {
+    height: 50px;
+    width: 50px;
+}
+
+.data-box {
+    text-align: left;
+    border: grey solid 0.1rem;
+    border-radius: 10px;
+    margin: 5px 3px;
+    /* padding-left: 10px; */
+    display: flex;
+}
+
+/* .data-box-area{
+    height: 10px;
+} */
+.columnInput {
+    width: 60%;
+    padding-left: 23%;
+}
+
+.data-box>img {
+    height: 70px;
+    width: 70px;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+/* .user-name>h4,
+.h4 {
+    margin: 5px
+} */
+/* .user-name{
+    display: flex;
+    align-items: flex-end;
+} */
+/* .user-name>h5,
+.h5 {
+    margin: 5px
+} */
+/* 
+.user-name > button{
+    margin-left: 15px;
+} */
+
+/* .btn-icon {
+    font-size: smaller;
+    padding-right: 5px;
+} */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.ms-welcome__header {
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 100px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ms-welcome__main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    padding: 10px 20px;
+}
+
+.ms-welcome__main>h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.ms-welcome__features {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.ms-welcome__features.ms-List .ms-ListItem {
+    padding-bottom: 20px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.ms-welcome__features.ms-List .ms-ListItem>.ms-Icon {
+    margin-right: 10px;
+}
+
+.ms-welcome__action.ms-Button--hero {
+    margin-top: 30px;
+}
+
+.ms-Button.ms-Button--hero .ms-Button-label {
+    color: #0078d7;
+}
+
+.ms-Button.ms-Button--hero:hover .ms-Button-label,
+.ms-Button.ms-Button--hero:focus .ms-Button-label {
+    color: #005a9e;
+    cursor: pointer;
+}
+/* .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: lightseagreen;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 1px;
+    text-align: center;
+    color:white
+  } */
+  .btnNext{
+    border: 1px solid gainsboro;
+    outline: none;
+    padding: 10px 16px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 1px;
+    text-align: center;
+    color:lightseagreen;
+  }
+  
+  .btn:active{
+    background-color:#3d706e;
+    color: white;
+}
+
+.active{
+    color: white;
+    background-color:lightseagreen;
+}
+  /* .btn:focus {
+    background-color:#3d706e;
+    color: white;
+  } */
+.joinBtn:active {
+    box-shadow: 2px 2px 5px #fc894d;
+    background-color:green;
+}
+
+b {
+    font-weight: bold;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    margin-left:250px;
+    float: left;
+}
+
+@media screen and (max-width: 500px) {
+    .img {
+        height: 100px;
+        width: 100px;
+        /* border-radius: 50%; */
+    }
+
+}
+
+@media screen and (max-width: 400px) and (min-width: 200px) {
+    .SearchInputTag {
+        /* float: left; */
+        width: 80px;
+        justify-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 400px)and (min-width:350px) {
+
+    .card {
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+        /* padding: 16px; */
+        /* text-align: center; */
+        /* background-color: #f1f1f1;
+        border: 1px solid lightseagreen; */
+        margin-right: 2px;
+        margin-left: 20px;
+        width: 100px;
+        text-align: center;
+        padding-top: 3px;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media screen and (max-width: 500px)and (min-width:400px) {
+
+    .card {
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+        /* padding: 16px; */
+        /* text-align: center; */
+        /* background-color: #f1f1f1;
+        border: 1px solid lightseagreen; */
+        margin-right: 2px;
+        margin-left: 30px;
+        width: 100px;
+        text-align: center;
+        padding-top: 3px;
+         margin-bottom: 5px;
+    }
+   
+}
+@media (max-width:350px) {
+
+    .card {
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+        /* padding: 16px; */
+        /* text-align: center; */
+        /* background-color: #f1f1f1;
+        border: 1px solid lightseagreen; */
+        margin-right: 2px;
+        margin-left: 5px;
+        width: 100px;
+        text-align: center;
+        padding-top: 3px;
+        margin-bottom: 5px;
+    }
+   
+}
+/* @media screen and (max-width: 400px) {
+
+    .button-group {
+        text-align: center;
+        margin-top: 7px;
+        margin-bottom: 10px;
+        margin-left:100px;
+    }
+   
+   
+} */
+@media (max-width:500px){
+  
+    .btnNext{ 
+       
+            border: 1px solid gainsboro;
+            outline: none;
+            padding: 2px 4px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 1px;
+            text-align: center;
+            color:lightseagreen;
+          }
+     
+     .btn {
+        border: none;
+        outline: none;
+        padding: 2px 4px;
+        background-color: lightseagreen;
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 1px;
+        text-align: center;
+        color:white
+        
+      } 
+      .button-group {
+        text-align: center;
+        margin-top: 7px;
+        margin-bottom: 10px;
+        margin-left:90px;
+    }
+  }
+@media (max-width: 700px)  and (min-width:450px){
+    .btnNext{ 
+       
+            border: 1px solid gainsboro;
+            outline: none;
+            padding: 4px 8px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 17px;
+            margin-right: 1px;
+            text-align: center;
+            color:lightseagreen;
+          }
+     
+     .btn {
+        border: none;
+        outline: none;
+        padding: 4px 8px;
+        background-color: lightseagreen;
+        cursor: pointer;
+        font-size: 17px;
+        margin-right: 1px;
+        text-align: center;
+        color:white
+        
+      } 
+      .button-group {
+        text-align: center;
+        margin-top: 7px;
+        margin-bottom: 10px;
+        margin-left:100px;
+    }
+  }
+@media screen and (max-width: 475px) {
+    .columnInput {
+        width: 95%;
+        padding-left: 4%;
+    }
+}
+.pageNumbers{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: -4rem;
+}
+.pageNumbers li {
+    padding: 10px;
+    border: 1px solid lightseagreen ;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.pageNumbers li:hover {
+    background-color:lightseagreen ;
+    color:white;
+}
+
+.pageNumbers li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.pageNumbers li button:hover {
+    background-color:lightseagreen ;
+    color: white;
+}
